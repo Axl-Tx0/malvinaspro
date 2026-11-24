@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030914">
+<meta name="description" content="MALVINAS PRO: conectividad, aplicación Android, planes y soporte en Argentina.">
+<title>MALVINAS PRO | Tu conexión, nuestra prioridad</title>
+<style>
+:root{--bg:#030914;--navy:#06152b;--panel:#071a34;--blue:#087cff;--blue2:#00a8ff;--cyan:#55cfff;--white:#f7faff;--muted:#c4d1e2;--line:#087cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#020711;color:var(--white);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,94%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(2,8,18,.96);border-bottom:1px solid rgba(0,140,255,.45);box-shadow:0 8px 24px #0008}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;min-width:205px}.brand img{width:190px;height:65px;object-fit:contain;mix-blend-mode:screen}
+nav{display:flex;align-items:center;gap:28px;font-weight:700;font-size:14px}nav a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 21px;border-radius:999px;background:linear-gradient(110deg,#0875f9,#00a8ff);border:1px solid #6bcfff;color:white;font-weight:800;box-shadow:0 5px 22px #007cff66;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.small{padding:10px 17px;font-size:14px}
+.hero{position:relative;overflow:hidden;min-height:535px;border-bottom:2px solid #008cff;background:
+ radial-gradient(ellipse at 80% 55%,rgba(0,119,255,.48),transparent 42%),
+ radial-gradient(ellipse at 35% 40%,rgba(0,57,130,.55),transparent 52%),
+ linear-gradient(115deg,#020916 0%,#061a35 54%,#031126 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(160deg,transparent 0 48px,rgba(25,137,255,.06) 49px 51px);opacity:.6}
+.hero:after{content:"🇦🇷";position:absolute;right:27%;top:25%;font-size:clamp(120px,20vw,250px);opacity:.10;filter:drop-shadow(0 0 30px #168dff);transform:rotate(-12deg)}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;min-height:535px;padding:52px 0}
+.kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);font-weight:900}
+h1{font-size:clamp(46px,7vw,78px);font-style:italic;line-height:.98;letter-spacing:-2.5px;margin:16px 0 8px;font-weight:1000}
+h1 span{color:#078dff;text-shadow:0 0 26px #008cff66}.tagline{font-size:clamp(23px,3vw,34px);font-weight:900;font-style:italic;margin:0 0 22px}
+.checks{list-style:none;padding:0;margin:0 0 27px;display:grid;gap:9px;font-size:18px}.checks li:before{content:"✓";display:inline-grid;place-items:center;width:23px;height:23px;margin-right:11px;border-radius:50%;background:#087cff;color:white;font-weight:900}
+.hero-cta{font-size:21px;padding:16px 27px;border:2px solid white}
+.made{font-family:Georgia,serif;font-style:italic;font-size:29px;margin:25px 0 0 55px;transform:rotate(-5deg);color:#e9f4ff}
+.phone-wrap{position:relative;display:flex;justify-content:center;align-items:center;min-height:400px}
+.phone{width:min(280px,75%);padding:10px;border-radius:38px;background:linear-gradient(135deg,#8db6d8,#101b2a 28%,#050910 70%,#6a9dc8);box-shadow:0 24px 55px #000b,0 0 35px #078cff55;transform:rotate(8deg)}
+.phone img{width:100%;height:390px;object-fit:cover;object-position:top;border-radius:29px;display:block}
+.feature-band{background:linear-gradient(90deg,#030914,#07182d,#030914);border-bottom:1px solid #087cff;padding:20px 0 25px}
+.section-heading{text-align:center;font-size:clamp(24px,3vw,32px);font-style:italic;margin:0 0 22px}.section-heading span{color:var(--cyan)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.feature{text-align:center;padding:0 16px;border-right:1px solid #0b3764}.feature:last-child{border:0}
+.feature-icon{width:66px;height:66px;margin:0 auto 8px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#12aaff,#0757d9);font-size:31px;box-shadow:0 0 24px #078cff77}
+.feature strong{display:block;font-size:17px}.feature small{color:#d3dfed;font-size:14px}
+section{scroll-margin-top:88px}
+.app-section{padding:32px 0;background:radial-gradient(ellipse at 80% 40%,#0a3765 0,transparent 44%),linear-gradient(110deg,#030914,#07182c);border-bottom:2px solid #078cff}
+.app-grid{display:grid;grid-template-columns:230px 1fr 240px;gap:30px;align-items:center}
+.app-logo{width:215px;height:215px;object-fit:contain;background:#020711;padding:8px;border:2px solid #078cff;border-radius:28px;box-shadow:0 0 25px #078cff77}
+.app-copy h2{font-size:29px;margin:0 0 8px}.app-copy p{font-size:17px;line-height:1.45;margin:0 0 12px;color:#f0f5fc}
+.app-copy ul{list-style:none;padding:0;margin:0;line-height:1.65}.app-copy li:before{content:"✓";color:#00e58a;font-weight:900;margin-right:9px}
+.mini-shot{width:100%;max-height:280px;object-fit:cover;object-position:top;border-radius:18px;border:1px solid #168dff;box-shadow:0 12px 30px #0008}
+.service{padding:55px 0;background:linear-gradient(120deg,#06162b,#030914);border-bottom:1px solid #087cff}
+.service-card{display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #087cff;border-radius:20px;padding:28px 32px;background:linear-gradient(120deg,#0a2a50,#061226);box-shadow:0 12px 35px #007cff22}
+.service-title{font-size:27px;font-weight:900;margin:5px 0 8px}.service p{color:#d1deef;line-height:1.6;margin:0;max-width:760px}.service-icon{font-size:50px;background:#087cff;border-radius:18px;padding:18px;box-shadow:0 0 25px #087cff66}
+.gallery-section{padding:55px 0;background:#030914;border-bottom:1px solid #087cff}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.shot{margin:0;background:#071a32;border:1px solid #087cff;border-radius:14px;overflow:hidden;box-shadow:0 8px 25px #0008}
+.shot img{width:100%;height:320px;object-fit:cover;object-position:top;display:block;background:#020711}
+.shot figcaption{text-align:center;font-weight:700;font-size:13px;padding:10px 6px;color:#dceaff}
+.plans{padding:34px 0 40px;background:radial-gradient(ellipse at 50% 0,#082a4d,transparent 55%),#030914;border-bottom:2px solid #078cff}
+.plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.plan{border:1px solid #078cff;border-radius:12px;overflow:hidden;text-align:center;background:linear-gradient(#061326,#020710);box-shadow:0 0 18px #007cff22}
+.plan h3{background:linear-gradient(90deg,#0872eb,#00a7ff);margin:0;padding:10px 5px;font-size:18px}
+.price{font-size:32px;font-weight:900;margin:8px 0 0}.days{color:var(--cyan);font-size:20px;font-weight:900;margin-bottom:12px}.plan .btn{margin:0 0 14px;padding:9px 24px;min-width:70%}
+.contact{padding:28px 0;background:#020711;border-bottom:2px solid #078cff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:18px;align-items:center}
+.contact-item{display:flex;align-items:center;gap:12px;border-right:1px solid #087cff;padding:8px 16px}
+.wa{width:47px;height:47px;border-radius:50%;display:grid;place-items:center;background:#12bd68;font-size:25px;flex-shrink:0}
+.contact-item small{display:block;color:#c5d5e8}.contact-item strong{font-size:19px}
+.community{display:flex;align-items:center;gap:14px;color:#e0eafa}
+footer{padding:20px 0;background:#020711}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.footer-brand{font-size:26px;font-weight:1000;font-style:italic}.footer-brand span{color:#078dff}
+.footer-note{font-family:Georgia,serif;font-style:italic;font-size:20px;color:#dbe8f8}
+.social{display:flex;gap:10px;align-items:center;font-size:12px;color:#b7c8dc}.social a{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#087cff;font-weight:900;color:white}
+@media(max-width:900px){nav{gap:13px;font-size:12px}.brand img{width:150px}.app-grid{grid-template-columns:180px 1fr}.mini-shot{display:none}.app-logo{width:170px;height:170px}.gallery{grid-template-columns:repeat(3,1fr)}.shot img{height:280px}}
+@media(max-width:650px){.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:8px 0}.brand{min-width:0}.brand img{width:145px;height:48px}nav{order:3;width:100%;justify-content:space-between;overflow:auto;padding:6px 0}.nav>.btn{padding:9px 12px;font-size:12px}.hero-inner{grid-template-columns:1fr;padding:48px 0 30px;min-height:0}.hero:after{right:3%;top:40%;font-size:150px}.phone-wrap{min-height:290px}.phone{width:190px}.phone img{height:270px}.made{font-size:23px}.features{grid-template-columns:repeat(2,1fr);row-gap:22px}.feature:nth-child(2){border:0}.app-grid{grid-template-columns:1fr;text-align:center;gap:18px}.app-logo{margin:auto;width:175px;height:175px}.app-copy ul{display:inline-block;text-align:left}.service-card{flex-direction:column;text-align:center;padding:24px}.gallery{grid-template-columns:repeat(2,1fr)}.shot img{height:300px}.plan-grid{grid-template-columns:repeat(2,1fr);gap:12px}.plan h3{font-size:15px}.price{font-size:27px}.contact-grid{grid-template-columns:1fr;gap:6px}.contact-item{border-right:0;border-bottom:1px solid #123c68}.community{justify-content:center;padding:10px}.footer-inner{justify-content:center;text-align:center}.social{justify-content:center}}
+@media(max-width:390px){.gallery{grid-template-columns:1fr 1fr}.shot img{height:250px}.checks{font-size:16px}.hero-cta{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#inicio"><img src="assets/logo-malvinas-pro.jpg" alt="MALVINAS PRO"></a>
+  <nav><a href="#inicio">Inicio</a><a href="#app">Nuestra App</a><a href="#service">Pro Service</a><a href="#planes">Planes</a><a href="#soporte">Soporte</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn small" href="https://www.mediafire.com/file/dxbiungtzex9rnz/MALVINAS_PRO_5.0.0.apk/file" target="_blank" rel="noopener">⬇ Descargar App</a>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap hero-inner">
+  <div>
+   <div class="kicker">Conectividad argentina</div>
+   <h1>MALVINAS <span>PRO</span></h1>
+   <p class="tagline">Tu conexión, nuestra <span style="color:#159dff">prioridad</span></p>
+   <ul class="checks"><li>Internet rápido y estable</li><li>Acceso seguro y privado</li><li>Soporte permanente</li></ul>
+   <a class="btn hero-cta" href="https://www.mediafire.com/file/dxbiungtzex9rnz/MALVINAS_PRO_5.0.0.apk/file" target="_blank" rel="noopener">⬇ Descargar Ahora</a>
+   <div class="made">Hecho en Argentina</div>
+  </div>
+  <div class="phone-wrap"><div class="phone"><img src="assets/app-inicio.jpg" alt="Aplicación MALVINAS PRO en Android"></div></div>
+ </div>
+</section>
+
+<section class="feature-band">
+ <div class="wrap">
+  <h2 class="section-heading">¿Por qué elegir <span>MALVINAS PRO</span>?</h2>
+  <div class="features">
+   <div class="feature"><div class="feature-icon">ϟ</div><strong>Conexión Ultra Rápida</strong><small>Navegá sin límites</small></div>
+   <div class="feature"><div class="feature-icon">🛡</div><strong>Máxima Seguridad</strong><small>Tus datos siempre protegidos</small></div>
+   <div class="feature"><div class="feature-icon">🎧</div><strong>Soporte Real</strong><small>Te ayudamos siempre</small></div>
+   <div class="feature"><div class="feature-icon">∞</div><strong>Sin Límites</strong><small>Disfrutá de internet ilimitado</small></div>
+  </div>
+ </div>
+</section>
+
+<section class="app-section" id="app">
+ <div class="wrap app-grid">
+  <img class="app-logo" src="assets/logo-malvinas-pro-completo.png" alt="Logo de MALVINAS PRO">
+  <div class="app-copy">
+   <h2>Nuestra Aplicación</h2>
+   <p>MALVINAS PRO es una app diseñada para brindarte conexión VPN de alta calidad, con servidores en Argentina y otros países, para que navegues, juegues y trabajes sin restricciones.</p>
+   <ul><li>Fácil de usar</li><li>Compatible con Android</li><li>Actualizaciones constantes</li></ul>
+  </div>
+  <img class="mini-shot" src="assets/app-servidores.jpg" alt="Selección de servidores en MALVINAS PRO">
+ </div>
+</section>
+
+<section class="service" id="service">
+ <div class="wrap service-card">
+  <div>
+   <div class="kicker">Otra solución para tu negocio</div>
+   <div class="service-title">MALVINAS PRO SERVICE</div>
+   <p>También contamos con una aplicación para gestionar tus ventas e ingresos. Organizá la actividad de tu negocio y llevá un mejor control desde tu dispositivo.</p>
+   <div style="margin-top:20px"><a class="btn" href="https://www.mediafire.com/file/4hgwi7tzr0x1wtj/Malvinas_Pro_Service_1.0.5.apk/file" target="_blank" rel="noopener">⬇ Descargar MALVINAS PRO SERVICE</a><div style="font-size:13px;color:#a9c4e2;margin-top:9px">Versión 1.0.5 · APK · 25,46 MB · Descarga por MediaFire</div></div>
+  </div>
+  <div class="service-icon" aria-hidden="true">📊</div>
+ </div>
+</section>
+
+<section class="gallery-section">
+ <div class="wrap">
+  <h2 class="section-heading">Conocé nuestra <span>Aplicación</span></h2>
+  <div class="gallery">
+   <figure class="shot"><img src="assets/app-inicio.jpg" alt="Pantalla principal de MALVINAS PRO" loading="lazy"><figcaption>Pantalla principal</figcaption></figure>
+   <figure class="shot"><img src="assets/app-servidores.jpg" alt="Categorías y servidores" loading="lazy"><figcaption>Servidores disponibles</figcaption></figure>
+   <figure class="shot"><img src="assets/app-cuenta.jpg" alt="Información de cuenta" loading="lazy"><figcaption>Información de cuenta</figcaption></figure>
+   <figure class="shot"><img src="assets/app-extras.jpg" alt="Menú de extras" loading="lazy"><figcaption>Herramientas y extras</figcaption></figure>
+   <figure class="shot"><img src="assets/app-suscripcion.jpg" alt="Información de suscripción" loading="lazy"><figcaption>Suscripción</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="plans" id="planes">
+ <div class="wrap">
+  <h2 class="section-heading">Nuestros <span>Planes</span></h2>
+  <div class="plan-grid">
+   <article class="plan"><h3>1 Celular</h3><div class="price">$8.000</div><div class="days">30 Días</div><a class="btn" href="https://wa.me/5493855672568?text=Hola%2C%20quiero%20contratar%20el%20plan%201%20Celular%20de%20MALVINAS%20PRO" target="_blank" rel="noopener">Contratar</a></article>
+   <article class="plan"><h3>1 TV</h3><div class="price">$12.000</div><div class="days">30 Días</div><a class="btn" href="https://wa.me/5493855672568?text=Hola%2C%20quiero%20contratar%20el%20plan%201%20TV%20de%20MALVINAS%20PRO" target="_blank" rel="noopener">Contratar</a></article>
+   <article class="plan"><h3>1 + 1 Celular y TV</h3><div class="price">$18.000</div><div class="days">30 Días</div><a class="btn" href="https://wa.me/5493855672568?text=Hola%2C%20quiero%20contratar%20el%20plan%201%2B1%20Celular%20y%20TV%20de%20MALVINAS%20PRO" target="_blank" rel="noopener">Contratar</a></article>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contacto">
+ <div class="wrap">
+  <h2 class="section-heading">Contactanos</h2>
+  <div class="contact-grid" id="soporte">
+   <a class="contact-item" href="https://wa.me/5493855672568" target="_blank" rel="noopener"><span class="wa">☎</span><span><small>Principal:</small><strong>3855 672568</strong></span></a>
+   <a class="contact-item" href="https://wa.me/5493855366233" target="_blank" rel="noopener"><span class="wa">☎</span><span><small>Secundario:</small><strong>3855 366233</strong></span></a>
+   <div class="community"><span style="font-size:36px">🤝</span><span>Sumate a nuestra comunidad<br>y disfrutá de todos los beneficios</span></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner">
+ <div class="footer-brand">MALVINAS <span>PRO</span></div>
+ <div class="footer-note">🇦🇷 &nbsp; Conectados por Argentina &nbsp; 🇦🇷</div>
+ <div class="social">Seguinos en nuestras redes <a href="https://wa.me/5493855672568" aria-label="WhatsApp">W</a></div>
+</div></footer>
+</body>
+</html>
